@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Pharmacies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    </head>
+      
+<body>
+  <h1>Nearby Pharmacies</h1>
+  <button onclick="getLocation()">Find Pharmacies Near Me</button>
+  <button onclick="openInGoogleMaps()">Show in Google Maps</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <div id="map" style="height: 400px; margin-top: 20px;"></div>
+</body>
+</html>
