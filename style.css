@@ -1,87 +1,102 @@
-/* body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background: #f0f8ff;
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* padding: 20px; */
+  background: #f0f8ff;
+  max-width: 97%;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+  background-color: #1e88e5;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+  width: 100%; /* or a specific value like 1200px */
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
-  
-  h1 {
-    color: #2c3e50;
+
+  nav a {
+    font-size: 14px;
   }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #27ae60;
-  }
-  
-  #output {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  #map {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    margin: 20px auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-  }
-   */
-   body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background: #f0f8ff;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  h1 {
-    color: #2c3e50;
-    font-size: 24px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px;
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #27ae60;
-  }
-  
-  #output {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
-    word-wrap: break-word;
-  }
-  
-  #map {
-    width: 100%;
-    height: 400px;
-    max-width: 600px;
-    margin: 20px auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-  }
-  
+}
+
+/* Main Content Styling */
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  background-color: #4c9269;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b82f6;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
